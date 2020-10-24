@@ -8,6 +8,8 @@ Database contains only one item, Components can manage more items from database.
 ### NO RWD applied- desktop only;
 ### View only on screen resolutions > 1200px
  
+ Try it out! [Demo](https://shopping-cart-7c93b.web.app/)
+ 
 <hr>
 
 ## Table of contents
