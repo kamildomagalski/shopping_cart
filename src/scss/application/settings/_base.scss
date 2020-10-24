@@ -1,0 +1,21 @@
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-base;
+  color: $color-dark;
+  font-size: 0.9rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
