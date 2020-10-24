@@ -6,14 +6,14 @@ Purpose of this app was to create a Component to handle cart checkout.
 Database contains only one item, Components can manage more items from database.
 
 ### NO RWD applied- desktop only;
-###View only on screen resolutions > 1200px
+### View only on screen resolutions > 1200px
  
 <hr>
 
 ## Table of contents
 * [Technologies](#technologies)
 * [Setup](#setup)
-* [How to use it?](#How to use it?)
+* [Features](#Features)
 * [Contact](#contact)
 <hr>
 
@@ -44,7 +44,7 @@ The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 <hr>
 
-
+## Features
 ### How to use it?
 1. Change quantity as you wish. Hit pencil icon or 'Update Shopping Cart' button to confirm amount. <hr>
 2. Then hit 'Proceed to checkout' buttons if you finish your shopping.
