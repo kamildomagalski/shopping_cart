@@ -1,0 +1,90 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 260px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    width: 100%;
+  }
+
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    color: grey;
+  }
+
+  &__text-bold {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+  }
+
+
+  &__totals {
+    width: 100%;
+    background-color: #f4f6f8;
+    border: 1px solid lightgray;
+    margin: 15px 0;
+    .checkout__header {
+      border: none;
+      border-bottom: 1px solid lightgray;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    font-size: 14px;
+  }
+
+  &__calc {
+    padding: 25px 15px;
+  }
+
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 12px;
+    border-bottom: 1px solid lightgray;
+  }
+
+  &__grandtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 10px;
+    .checkout__text-bold {
+      font-size: 17px;
+    }
+  }
+
+  .btn-checkout2 {
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+  .btn-checkout1 {
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 14px;
+    padding: 10px 15px;
+
+  }
+  .btn-black {
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    font-weight: 500;
+  }
+}

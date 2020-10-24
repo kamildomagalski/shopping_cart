@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Product from "./Product";
 import headphones from '../images/headphones.png'
+import Checkout from "./Checkout";
 
 function ShoppingCart() {
   //w prawdziwej sytuacji stan początkowy komponentu mógłby być przekazany z rodzica jako props,
@@ -48,8 +49,8 @@ function ShoppingCart() {
               )
             })}
           </div>
-        
         </div>
+        <Checkout/>
       </div>
     </section>
   );
