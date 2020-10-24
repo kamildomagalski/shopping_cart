@@ -65,7 +65,7 @@ function Product({ item, deleteProduct, updateItem, update }) {
         </button>
         <input
           className="input"
-          type="number"
+          type="text"
           name="quantity"
           value={quantity}
           onChange={handleChange}

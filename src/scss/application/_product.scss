@@ -29,7 +29,7 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    &:hover{
+    &:hover {
       border-radius: 3px;
       box-shadow: 1px 1px 5px 2px $border-color-light;
     }
@@ -50,14 +50,15 @@
     border: 2px solid $border-color-dark;
     color: darkgray;
     border-right-width: 1px;
-    //turn off default spinner buttons for more visibility
-    &::-webkit-inner-spin-button {
+    //turn off default spinner buttons for more visibility - ONLY CHROME WORKS- so I set input to type text
+    &,
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
       -webkit-appearance: none;
-      -moz-appearance: textfield;
-      margin: 0;
+      -moz-appearance: none;
+      appearance: none;
     }
   }
-
   &__error {
     font-size: 12px;
     color: $color-error;
