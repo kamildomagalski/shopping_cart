@@ -16,7 +16,7 @@
 }
 
 .btn-black {
-  border: 1px solid $color-black;
+  border: none;
   background-color: $bg-color-dark;
   font-size: 16px;
   color: white;
@@ -24,6 +24,7 @@
   font-weight: 500;
 
   &:hover {
+    border: none;
     box-shadow: 1px 1px 5px 3px $color-grey;
   }
 }
