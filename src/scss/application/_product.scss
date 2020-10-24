@@ -1,0 +1,61 @@
+.product {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid lightgrey;
+&__text {
+  font-weight: 300;
+  font-size: 14px;
+  color: grey;
+  width: 150px;
+
+}
+&__text:nth-of-type(2) {
+  font-weight: 500;
+  width: 110px;
+}
+
+  .imgContainer {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 100px 0 50px;
+  }
+
+  .iconContainer {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .qtyWrapper {
+    width: 197px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+  .btn {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 0;
+    border: 1px solid lightgrey;
+    font-weight: 700;
+    color: grey;
+  }
+
+  .input {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 0;
+    border: 2px solid black;
+    color: darkgray;
+    border-right-width: 1px;
+  }
+}
+
+
+
+
