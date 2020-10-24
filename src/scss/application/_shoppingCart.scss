@@ -37,6 +37,17 @@
       width: 150px;
     }
 
+    &__footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px 10px 0 0;
+    }
 
+  }
+  .btn-black {
+    background-color: black;
+    color: white;
+    padding: 7px 15px;
+    font-weight: 500;
   }
 }
