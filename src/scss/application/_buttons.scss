@@ -1,0 +1,46 @@
+.btn {
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 0;
+  border: 1px solid $border-color-light;
+  font-weight: 700;
+  color: $color-grey;
+
+  &:hover {
+    border: 1px solid $border-color-dark;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+.btn-black {
+  border: 1px solid $color-black;
+  background-color: $bg-color-dark;
+  font-size: 16px;
+  color: white;
+  padding: 7px 15px;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: 1px 1px 5px 3px $color-grey;
+  }
+}
+
+.btn-checkout1 {
+  font-weight: 300;
+  font-size: 14px;
+  border: none;
+  margin-bottom: 14px;
+  padding: 10px 15px;
+}
+
+.btn-checkout2 {
+  width: 100%;
+  border: none;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 0;
+}

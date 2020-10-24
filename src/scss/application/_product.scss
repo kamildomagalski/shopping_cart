@@ -29,21 +29,16 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:hover{
+      border-radius: 3px;
+      box-shadow: 1px 1px 5px 2px $border-color-light;
+    }
   }
 
   .qtyWrapper {
     width: 197px;
     display: flex;
     justify-content: flex-start;
-  }
-
-  .btn {
-    min-width: 30px;
-    min-height: 30px;
-    border-radius: 0;
-    border: 1px solid $border-color-light;
-    font-weight: 700;
-    color: grey;
   }
 
   .input {

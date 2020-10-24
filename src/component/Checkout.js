@@ -18,7 +18,7 @@ function Checkout({ cart }) {
   return (
     <div className="checkout">
       <Link to={"/checkoutSuccess"}>
-        <button className="btn-black btn-checkout1">Proceed to checkout</button>
+        <button className="btn btn-black btn-checkout1">Proceed to checkout</button>
       </Link>
       <div className="checkout__header">
         <h4 className="checkout__text checkout__text-bold"> Shipping</h4>
