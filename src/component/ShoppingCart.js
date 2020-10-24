@@ -50,7 +50,7 @@ function ShoppingCart() {
             })}
           </div>
         </div>
-        <Checkout/>
+        <Checkout cart={cart}/>
       </div>
     </section>
   );

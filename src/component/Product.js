@@ -17,12 +17,12 @@ const handleChange= (e) =>{
   const handleDelete= () =>{
     deleteProduct(item.id)
   }
-  const handleCart= () =>{
-  
-  }
+
   const handleUpdateItem= () =>{
   updateItem(item.id, quantity)
   }
+  
+  
  return (
    <div className="product">
      <div className="iconContainer">
