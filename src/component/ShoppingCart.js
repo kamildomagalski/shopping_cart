@@ -13,10 +13,24 @@ function ShoppingCart() {
     img: headphones
   }])
   
-const deleteProduct= (id)=> {
+  const deleteProduct = (id) => {
     setCart(cart.filter((item) => item.id !== id))
-}
+  }
+  const updateItem = (id, qty) => {
+    setCart(
+      cart.map((item) => {
+        if (item.id === id) {
+          return {
+            ...item,
+            quantity: qty
+          }
+        }
+        return item
+      })
+    )
+  }
   
+  console.log(cart);
   return (
     <section className={'shoppingCart'}>
       <div className={'container'}>
@@ -28,9 +42,9 @@ const deleteProduct= (id)=> {
               <p className="cart__subtitle">Unit Price</p>
               <p className="cart__subtitle">Qty</p>
             </div>
-            {cart.map((el, i) => {
+            {cart.map((el) => {
               return (
-                <Product key={i} item={el} deleteProduct={deleteProduct}/>
+                <Product key={el.id} item={el} deleteProduct={deleteProduct} updateItem={updateItem}/>
               )
             })}
           </div>
