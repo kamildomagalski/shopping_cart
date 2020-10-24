@@ -9,7 +9,7 @@
     justify-content: space-between;
     padding: 10px 15px;
     background-color: whitesmoke;
-    border: 1px solid lightgray;
+    border: 1px solid $color-light;
     width: 100%;
   }
 
@@ -23,25 +23,25 @@
   &__text-bold {
     text-transform: uppercase;
     font-weight: 700;
-    color: black;
+    color:$color-black;
   }
 
 
   &__totals {
     width: 100%;
     background-color: #f4f6f8;
-    border: 1px solid lightgray;
+    border: 1px solid $border-color-light;
     margin: 15px 0;
     .checkout__header {
       border: none;
-      border-bottom: 1px solid lightgray;
+      border-bottom: 1px solid $border-color-light;
     }
   }
 
   &__subtitle {
     text-transform: uppercase;
     font-weight: 700;
-    color: black;
+    color: $color-black;
     font-size: 14px;
   }
 
@@ -53,7 +53,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px 12px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid $border-color-light;
   }
 
   &__grandtotal {
@@ -65,13 +65,13 @@
     }
   }
 
-  .btn-checkout2 {
-    width: 100%;
-    border: none;
-    margin-top: 10px;
-    font-size: 14px;
+
+
+  .btn-black {
+    background-color: $bg-color-dark;
+    color: white;
+    padding: 7px 15px;
     font-weight: 500;
-    padding: 10px 0;
   }
   .btn-checkout1 {
     font-weight: 300;
@@ -79,12 +79,13 @@
     border: none;
     margin-bottom: 14px;
     padding: 10px 15px;
-
   }
-  .btn-black {
-    background-color: black;
-    color: white;
-    padding: 7px 15px;
+  .btn-checkout2 {
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
     font-weight: 500;
+    padding: 10px 0;
   }
 }

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Checkout({ cart }) {
   const totalValue = cart
     .map((item) => item.quantity * item.unitPrice)
-    .reduce((total, price) => total + price);
+    .reduce((total, price) => total + price, 0);
   const shippingValue = () => {
     if (totalValue < 100) {
       return 23.8;
@@ -12,6 +12,8 @@ function Checkout({ cart }) {
       return 0.0;
     }
   };
+  
+  
   const grandTotal = totalValue + shippingValue();
   return (
     <div className="checkout">

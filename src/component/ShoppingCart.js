@@ -20,8 +20,8 @@ function ShoppingCart() {
     setCart(cart.filter((item) => item.id !== id));
   };
   const updateItem = (id, qty) => {
-    setCart(
-      cart.map((item) => {
+    setCart((prevState) =>
+      prevState.map((item) => {
         if (item.id === id) {
           return {
             ...item,
@@ -60,10 +60,7 @@ function ShoppingCart() {
               );
             })}
             <div className="cart__footer">
-              <button
-                className=" btn btn-black btn__footer"
-                onClick={updateCart}
-              >
+              <button className=" btn btn-black" onClick={updateCart}>
                 Update Shopping Cart
               </button>
             </div>
