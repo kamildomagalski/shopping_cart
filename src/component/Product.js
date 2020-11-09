@@ -4,7 +4,10 @@ import edit_img from "../images/edit-img.png";
 
 function Product({ item, deleteProduct, updateProduct, update }) {
   const [quantity, setQuantity] = useState(item.quantity);
-  const [error, setError] = useState("");
+  const [error, setError] = useState({
+    wrongQty: "",
+    tooMuch: "",
+  });
   useEffect(() => {
     if (!validate()) return;
     updateProduct(item.id, quantity);
@@ -39,13 +42,25 @@ function Product({ item, deleteProduct, updateProduct, update }) {
     let isValid = true;
     if (quantity <= 0 || typeof quantity !== "number" || quantity === "") {
       isValid = false;
-      setError("Wrong quantity!");
+      setError((prevState) => ({
+        ...prevState,
+        wrongQty: "Wrong quantity!",
+      }));
+    } else if (quantity > 99) {
+      isValid = false;
+      setError((prevState) => ({
+        ...prevState,
+        tooMuch: "Max qty is 99",
+      }));
     }
     return isValid;
   }
 
   function clearError() {
-    setError("");
+    setError({
+      wrongQty: "",
+      tooMuch: "",
+    });
   }
 
   return (
@@ -85,7 +100,10 @@ function Product({ item, deleteProduct, updateProduct, update }) {
         <div className="iconContainer" onClick={handleUpdateProduct}>
           <img src={edit_img} alt="pencil" />
         </div>
-        <p className={"product__error"}>{error}</p>
+        <p className={"product__error"}>
+          {error.wrongQty}
+          {error.tooMuch}
+        </p>
       </div>
     </div>
   );
