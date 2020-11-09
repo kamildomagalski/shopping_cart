@@ -12,10 +12,12 @@ function Product({ item, deleteProduct, updateItem, update }) {
   }, [update]);
 
   const handleChange = (e) => {
-    setQuantity(e.target.value);
+    setQuantity(
+      parseInt(e.target.value) ? parseInt(e.target.value) : e.target.value
+    );
   };
   const handleAddQuantity = () => {
-    if (quantity === "" || quantity < 0 || typeof quantity !== 'number') {
+    if (quantity === "" || quantity < 0 || typeof quantity !== "number") {
       return setQuantity(1);
     }
     setQuantity((prevState) => prevState + 1);
@@ -41,6 +43,7 @@ function Product({ item, deleteProduct, updateItem, update }) {
     }
     return isValid;
   }
+
   function clearError() {
     setError("");
   }
@@ -59,7 +62,9 @@ function Product({ item, deleteProduct, updateItem, update }) {
         <button
           className="btn"
           onClick={handleSubtractQuantity}
-          disabled={quantity <= 1 || quantity === "" || typeof quantity !== 'number'}
+          disabled={
+            quantity <= 1 || quantity === "" || typeof quantity !== "number"
+          }
         >
           -
         </button>
