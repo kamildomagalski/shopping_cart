@@ -19,7 +19,7 @@ function ShoppingCart() {
   const deleteProduct = (id) => {
     setCart(cart.filter((item) => item.id !== id));
   };
-  const updateItem = (id, qty) => {
+  const updateProduct = (id, qty) => {
     setCart((prevState) =>
       prevState.map((item) => {
         if (item.id === id) {
@@ -54,7 +54,7 @@ function ShoppingCart() {
                   key={el.id}
                   item={el}
                   deleteProduct={deleteProduct}
-                  updateItem={updateItem}
+                  updateProduct={updateProduct}
                   update={update}
                 />
               );

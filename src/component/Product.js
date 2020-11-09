@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import x_img from "../images/x-img.png";
 import edit_img from "../images/edit-img.png";
 
-function Product({ item, deleteProduct, updateItem, update }) {
+function Product({ item, deleteProduct, updateProduct, update }) {
   const [quantity, setQuantity] = useState(item.quantity);
   const [error, setError] = useState("");
   useEffect(() => {
     if (!validate()) return;
-    updateItem(item.id, quantity);
+    updateProduct(item.id, quantity);
     clearError();
   }, [update]);
 
@@ -29,9 +29,9 @@ function Product({ item, deleteProduct, updateItem, update }) {
     deleteProduct(item.id);
   };
 
-  function handleUpdateItem() {
+  function handleUpdateProduct() {
     if (!validate()) return;
-    updateItem(item.id, quantity);
+    updateProduct(item.id, quantity);
     clearError();
   }
 
@@ -82,7 +82,7 @@ function Product({ item, deleteProduct, updateItem, update }) {
         >
           +
         </button>
-        <div className="iconContainer" onClick={handleUpdateItem}>
+        <div className="iconContainer" onClick={handleUpdateProduct}>
           <img src={edit_img} alt="pencil" />
         </div>
         <p className={"product__error"}>{error}</p>
