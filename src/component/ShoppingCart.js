@@ -13,6 +13,20 @@ function ShoppingCart() {
       quantity: 2,
       img: headphones,
     },
+    {
+      id: 3468,
+      productName: "Cheap headphones",
+      unitPrice: 5.9,
+      quantity: 2,
+      img: headphones,
+    },
+    {
+      id: 3469,
+      productName: " Super headphones",
+      unitPrice: 29.9,
+      quantity: 2,
+      img: headphones,
+    },
   ]);
   const [update, setUpdate] = useState(false);
 
