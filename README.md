@@ -1,9 +1,9 @@
 
 # Shopping Cart
 
-An example of a Cart that could bu used in a shop application. I followed UX Designer's guideline.
+An example of a Cart that could be used in a shop application. I followed UX Designer's guideline.
 Purpose of this app was to create a Component to handle cart checkout. 
-Database contains only one item, Components can manage more items from database.
+Database contains only three item, Components can manage more items from database(if provided).
 
 ### NO RWD applied- desktop only;
 ### View only on screen resolutions > 1200px
